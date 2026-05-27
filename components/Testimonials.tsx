@@ -71,9 +71,9 @@ export default function Testimonials() {
                 <div style={{
                   width: '45px', height: '45px', borderRadius: '50%',
                   background: 'var(--gold-glow)', border: '1px solid var(--border)',
-                  display: 'flex', alignItems: 'center', justifyCenter: 'center',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
                   color: 'var(--gold)', fontWeight: 'bold', fontSize: '1.1rem',
-                  flexShrink: 0, justifyContent: 'center'
+                  flexShrink: 0
                 }}>
                   {rev.name.charAt(0)}
                 </div>
