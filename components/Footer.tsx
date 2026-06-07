@@ -84,7 +84,7 @@ export default function Footer() {
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', justifyContent: isRtl ? 'flex-end' : 'flex-start', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
               <a href="https://wa.me/212779403213" target="_blank" rel="noopener noreferrer" 
                 className="btn btn-whatsapp" style={{ padding: '0.6rem 1.2rem', fontSize: '0.75rem', borderRadius: '4px' }}>
-                📲 {t('footer.btn.live')}
+                {t('footer.btn.live')}
               </a>
             </div>
           </div>

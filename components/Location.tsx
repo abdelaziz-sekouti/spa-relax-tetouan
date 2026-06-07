@@ -91,11 +91,11 @@ export default function Location() {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '2.5rem', flexDirection: isRtl ? 'row-reverse' : 'row' }}>
               <a href={whatsappUrl} 
                 target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp" style={{ flexGrow: 1, justifyContent: 'center' }}>
-                📲 {t('contact.btn.wa')}
+                 {t('contact.btn.wa')}
               </a>
               <a href="https://maps.google.com/?q=SPA+RELAX+ISTANBUL+Avenue+Kaboul+Tiknia+Tetouan" 
                 target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ flexGrow: 1, justifyContent: 'center' }}>
-                🗺 {t('contact.btn.maps')}
+                 {t('contact.btn.maps')}
               </a>
             </div>
 
