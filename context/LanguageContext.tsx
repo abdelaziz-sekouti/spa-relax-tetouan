@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-export type Language = 'fr' | 'ar' | 'en' | 'es' | 'it' | 'tr';
+export type Language = 'fr' | 'ar' | 'en' | 'es' | 'it' | 'tr' | 'pt';
 
 interface LanguageContextType {
   language: Language;
@@ -123,6 +123,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.address.label': 'Adresse',
     'contact.address.val': 'SPA RELAX ISTANBUL, Avenue Kaboul, Tiknia 93030, Tétouan, Maroc',
     'contact.phone.label': 'WhatsApp & Téléphone',
+    'contact.phone.val': '+21 612 345 678',
     'contact.hours.label': 'Horaires d\'Ouverture',
     'contact.hours.val': 'Tous les jours : de 09:00 à 22:00',
     'contact.hours.note': '* Uniquement sur rendez-vous ou réservation préalable.',
@@ -268,6 +269,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.address.label': 'العنوان',
     'contact.address.val': 'SPA RELAX ISTANBUL، شارع كابول، التكنية 93030، تطوان، المغرب',
     'contact.phone.label': 'الواتساب والهاتف',
+    'contact.phone.val': '\u202D+212 779-403213\u202C',
     'contact.hours.label': 'أوقات العمل',
     'contact.hours.val': 'يومياً من الساعة 09:00 صباحاً حتى 10:00 مساءً',
     'contact.hours.note': '* الحجز المسبق مطلوب دائماً.',
@@ -413,6 +415,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.address.label': 'Address',
     'contact.address.val': 'SPA RELAX ISTANBUL, Kabul Avenue, Tiknia 93030, Tetouan, Morocco',
     'contact.phone.label': 'WhatsApp & Phone',
+    'contact.phone.val': '+21 612 345 678',
     'contact.hours.label': 'Opening Hours',
     'contact.hours.val': 'Every day: from 09:00 to 22:00',
     'contact.hours.note': '* Strictly by prior appointment or reservation.',
@@ -558,6 +561,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.address.label': 'Dirección',
     'contact.address.val': 'SPA RELAX ISTANBUL, Avenida Kabul, Tiknia 93030, Tetuán, Marruecos',
     'contact.phone.label': 'WhatsApp y Teléfono',
+    'contact.phone.val': '+21 612 345 678',
     'contact.hours.label': 'Horario de Apertura',
     'contact.hours.val': 'Todos los días: de 09:00 a 22:00',
     'contact.hours.note': '* Estrictamente bajo cita previa o reserva.',
@@ -703,6 +707,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.address.label': 'Indirizzo',
     'contact.address.val': 'SPA RELAX ISTANBUL, Avenue Kabul, Tiknia 93030, Tetouan, Marocco',
     'contact.phone.label': 'WhatsApp e Telefono',
+    'contact.phone.val': '+21 612 345 678',
     'contact.hours.label': 'Orari di Apertura',
     'contact.hours.val': 'Tutti i giorni: dalle 09:00 alle 22:00',
     'contact.hours.note': '* Rigorosamente su appuntamento o prenotazione previa.',
@@ -848,6 +853,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.address.label': 'Adres',
     'contact.address.val': 'SPA RELAX ISTANBUL, Kabil Caddesi, Tiknia 93030, Tetuan, Fas',
     'contact.phone.label': 'WhatsApp & Telefon',
+    'contact.phone.val': '+21 612 345 678',
     'contact.hours.label': 'Açılış Saatleri',
     'contact.hours.val': 'Her gün: 09:00 - 22:00 saatleri arasında',
     'contact.hours.note': '* Yalnızca önceden yapılan randevu veya rezervasyon ile.',
@@ -880,7 +886,153 @@ const translations: Record<Language, Record<string, string>> = {
     'chat.opt2': '💰 Fiyatlar ve teklifler hakkında bilgi al',
     'chat.opt3': '📍 Merkezin konumunu öğren',
     'chat.opt4': '🤔 Masaj türleri hakkında soru sor',
-    'chat.placeholder': 'Mesajınızı yazın...',
+    'chat.placeholder': 'Escreva sua mensagem...',
+  },
+  pt: {
+    // Navbar
+    'nav.home': 'Início',
+    'nav.services': 'Serviços',
+    'nav.gallery': 'Galeria',
+    'nav.reviews': 'Avaliações',
+    'nav.faq': 'FAQ',
+    'nav.contact': 'Contato',
+    'nav.book': 'Reservar',
+
+    // Hero
+    'hero.badge': 'MASSAGEM PREMIUM PARA HOMENS · TETUAN',
+    'hero.title1': 'A arte suprema da ',
+    'hero.titleItalic': 'relaxamento',
+    'hero.title2': ' para homens',
+    'hero.desc1': 'Libere sua mente e revitalize e seu corpo no centro de Tetuán. ',
+    'hero.descBold': 'SPA RELAX ISTANBUL',
+    'hero.desc2': ' oferece massagens excepcionais em um ambiente privado, elegante e exclusivamente masculino.',
+    'hero.descItalic': ' Massagem 100% profissional, terapêutica e anti-stress.',
+    'hero.trust.masseur': 'Massagistas Especialistas',
+    'hero.trust.frame': 'Ambiente Privado Discreto',
+    'hero.trust.hygiene': 'Higiene Rigorosa',
+    'hero.btn.wa': 'RESERVAR PELO WHATSAPP',
+    'hero.btn.services': 'NOSSOS SERVIÇOS',
+
+    // Benefits
+    'benefits.label': 'Por Que Escolher Nosso Centro',
+    'benefits.title': 'Excelência no Bem-Estar Masculino',
+    'benefits.desc': 'Redefinimos os padrões da massagem para homens em Tetuán graças a terapeutas altamente certificados e tratamentos de alta gama.',
+    'benefits.b1.title': 'Higiene Absoluta',
+    'benefits.b1.desc': 'Cabines limpas e desinfetadas após cada cliente; lençóis e toalhas de uso único.',
+    'benefits.b2.title': 'Discreção Total',
+    'benefits.b2.desc': 'Ambiente quente e altamente discreto que respeita plenamente sua privacidade. Entrada e saída seguras.',
+    'benefits.b3.title': 'Terapeutas Certificados',
+    'benefits.b3.desc': 'Uma equipe profissional dominando as melhores técnicas orientais e ocidentais de relaxamento.',
+    'benefits.b4.title': 'Óleos Orgânicos Premium',
+    'benefits.b4.desc': 'Uso exclusivo de óleos essenciais orgânicos premium adaptados ao seu tipo de pele.',
+
+    // Services
+    'services.label': 'Nossos Rituais de Cuidado',
+    'services.title': 'Massagens Excepcionais e Terapias',
+    'services.desc': 'Cada massagem é realizada por um especialista certificado, usando óleos de aromaterapia adaptados às suas tensões físicas.',
+    'services.rec': 'Recomendado',
+    'services.min': 'Min',
+    'services.btn': 'Reservar no WhatsApp',
+    'services.s1.title': 'Massagem Relaxante Tradicional',
+    'services.s1.desc': 'Uma massagem fluida e envolvente pelo corpo inteiro. Ideal para eliminar a fadiga diária, liberar tensões musculares e restaurar a harmonia total.',
+    'services.s2.title': 'Massagem Deep Tissue (Anti-Stress)',
+    'services.s2.desc': 'Uma massagem profunda visando camadas musculares e fascia. Recomendada para atletas, profissionais ativos e tensões na espinha.',
+    'services.s3.title': 'Massagem Oriental com Pedras Quentes',
+    'services.s3.desc': 'A combinação perfeita de pedras vulcânicas quentes e pressão relaxante. Promove uma relaxamento muscular profundo e melhora a circulação.',
+    'services.s4.title': 'Ritual VIP - SPA RELAX ISTANBUL',
+    'services.s4.desc': 'Nossa experiência de relaxamento definitiva. Uma massagem personalizada combinando óleos essenciais orgânicos, massagem de cabeça relaxante e reflexologia.',
+
+    // Gallery
+    'gallery.label': 'Visita Guiada',
+    'gallery.title': 'Galeria do Nosso Centro',
+    'gallery.desc': 'Imersa-se na atmosfera refinada do nosso spa em Tetuán. Decoração cuidada, luzes suaves e higiene rigorosa.',
+    'gallery.c1': 'Espaço Relax',
+    'gallery.c2': 'Ingredientes e Cuidados',
+    'gallery.c3': 'Ambiente',
+    'gallery.c4': 'Cuidados Masculinos',
+    'gallery.c5': 'Ambiente Privado',
+    'gallery.c6': 'Recepção',
+    'gallery.t1': 'Cabine Privada Premium',
+    'gallery.t2': 'Relaxamento Total',
+    'gallery.t3': 'Ambiente Terapêutico',
+    'gallery.t4': 'Pedicure e Cuidados dos Pés',
+    'gallery.t5': 'Ambiente Quente e Suave',
+    'gallery.t6': 'Recepção VIP',
+    'gallery.cta.title': 'Pronto para um momento de relaxamento absoluto?',
+    'gallery.cta.desc': 'Reserve sua sessão agora no WhatsApp. Agendamento rápido e totalmente discreto.',
+    'gallery.cta.btn': '📲 Reserve minha sessão',
+
+    // Testimonials
+    'reviews.label': 'Avaliações de Clientes',
+    'reviews.title': 'O que nossos clientes dizem de nós',
+    'reviews.desc': 'A satisfação e discreção de nossos clientes são nossas maiores prioridades. Descubra suas experiências no SPA RELAX ISTANBUL.',
+    'reviews.r1.name': 'Youssef El Amrani',
+    'reviews.r1.role': 'Empresário, Tetuán',
+    'reviews.r1.quote': 'Honestamente, o melhor centro de massagem para homens em Tetuán. O local é luxuoso, limpo e extremamente discreto. A massagem Deep Tissue me liberou completamente da dor muscular.',
+    'reviews.r2.name': 'Amine B.',
+    'reviews.r2.role': 'Profissional Autônomo, Tânger',
+    'reviews.r2.quote': 'Serviço de 5 estrelas! O atendimento é respeitoso e profissional. Tudo é feito para você se sentir à vontade. A higiene é impecável.',
+    'reviews.r3.name': 'Rachid Tetouani',
+    'reviews.r3.role': 'Cliente Regular, Tetuán',
+    'reviews.r3.quote': 'Uma verdadeira massagem terapêutica profissional! Diferente de outros lugares básicos. Os óleos usados são de muita qualidade. Altamente recomendado.',
+
+    // FAQ
+    'faq.label': 'Perguntas Frequentes',
+    'faq.title': 'Tem dúvidas? Temos as respostas',
+    'faq.desc': 'Encontre todas as respostas às perguntas mais comuns sobre nossas massagens, políticas de reserva e centro em Tetuán.',
+    'faq.q1': 'As massagens são mistas ou apenas para homens?',
+    'faq.a1': 'SPA RELAX ISTANBUL é um ambiente exclusivamente masculino. As massagens são feitas em um ambiente totalmente privado para garantir o máximo conforto, respeito e relaxamento.',
+    'faq.q2': 'Vocês oferecem serviços de hammam ou esfoliação?',
+    'faq.a2': 'Não, nosso centro é especializado exclusivamente em massagens terapêuticas profissionais de alta qualidade. Não oferecemos serviços de hammam tradicional.',
+    'faq.q3': 'É obrigatório reservar com antecedência?',
+    'faq.a3': 'Sim, para garantir sua cabine privada e disponibilidade imediata sem tempo de espera, todas as sessões de massagem são estritamente por reserva prévia.',
+    'faq.q4': 'Que tipo de óleos de massagem vocês usam?',
+    'faq.a4': 'Utilizamos exclusivamente óleos de amêndoa doce, óleos de coco orgânicos e óleos essenciais premium selecionados por suas propriedades relaxantes e restauradoras.',
+    'faq.q5': 'Onde fica exatamente o spa em Tetuán?',
+    'faq.a5': 'Nosso centro de bem-estar está localizado na Avenida Kabul, Tiknia 93030, Tetuán. Um local tranquilo, elegante e facilmente acessível com opções de estacionamento nearby.',
+
+    // Location
+    'contact.label': 'Onde Encontrar-Nos',
+    'contact.title': 'Nosso Centro em Tetuán',
+    'contact.desc': 'Idealmente localizado em um bairro tranquilo e facilmente acessível em Tetuán. Venha renovar sua energia no nosso espaço de bem-estar masculino.',
+    'contact.info': 'INFORMAÇÕES DE CONTATO',
+    'contact.address.label': 'Endereço',
+    'contact.address.val': 'SPA RELAX ISTANBUL, Avenida Kabul, Tiknia 93030, Tetuán, Marrocos',
+    'contact.phone.label': 'WhatsApp e Telefone',
+    'contact.phone.val': '+21 612 345 678',
+    'contact.hours.label': 'Horários de Funcionamento',
+    'contact.hours.val': 'Todos os dias: das 09:00 às 22:00',
+    'contact.hours.note': '* Estritamente por marcação ou reserva prévia.',
+    'contact.btn.wa': '📲 Reservar no WhatsApp',
+    'contact.btn.maps': '🗺 Direções no Google Maps',
+
+    // Footer
+    'footer.slogan': 'ISTANBUL · TETUAN',
+    'footer.desc': 'Centro de massagem de luxo para homens em Tetuán. Um refúgio exclusivo onde o relaxamento absoluto encontra a refinamento otomano e a excelência terapêutica.',
+    'footer.spec.title': 'Nossas Especialidades',
+    'footer.spec.s1': 'Massagem Relaxante Profissional',
+    'footer.spec.s2': 'Massagem Deep Tissue Anti-Stress',
+    'footer.spec.s3': 'Terapia com Pedras Volcânicas Quentes',
+    'footer.spec.s4': 'Massagem de Cabeça e Reflexologia',
+    'footer.spec.s5': 'Aromaterapia Orgânica Bio',
+    'footer.spec.s6': 'Rituais VIP Personalizados para Homens',
+    'footer.contact.title': 'Contato Rápido',
+    'footer.btn.live': '📲 Chat ao Vivo no WhatsApp',
+    'footer.copy': 'Todos os direitos reservados. Tratamentos de bem-estar rigorosamente profissionais e apenas para homens.',
+    'footer.legal': 'Aviso Legal',
+    'footer.privacy': 'Política de Privacidade',
+
+    // Chatbot
+    'chat.notify': 'Olá! Alguma dúvida?',
+    'chat.status': 'Online agora',
+    'chat.greet1': 'Marhaban! Bem-vindo ao SPA RELAX ISTANBUL em Tetuán. 🇲🇦🇹🇷',
+    'chat.greet2': 'Sou Youssef, seu consultor de bem-estar. Como posso ajudar você hoje?',
+    'chat.hours': 'Gerente do Spa · 09:00 - 22:00',
+    'chat.opt1': '💆‍♂️ Reservar uma sessão de massagem',
+    'chat.opt2': '💰 Perguntar sobre preços e ofertas',
+    'chat.opt3': '📍 Como chegar ao centro',
+    'chat.opt4': '🤔 Perguntar sobre tipos de massagens',
+    'chat.placeholder': 'Digite sua mensagem...',
   },
 };
 
@@ -892,7 +1044,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Load language from localStorage if exists
     const stored = localStorage.getItem('spa_relax_lang') as Language;
-    if (stored && ['fr', 'ar', 'en', 'es', 'it', 'tr'].includes(stored)) {
+    if (stored && ['fr', 'ar', 'en', 'es', 'it', 'tr', 'pt'].includes(stored)) {
       setLanguageState(stored);
     }
   }, []);

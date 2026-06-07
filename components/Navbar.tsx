@@ -70,6 +70,7 @@ export default function Navbar() {
       <option style={{ background: '#131313', color: '#f0ece4' }} value="es">🇪🇸 ES</option>
       <option style={{ background: '#131313', color: '#f0ece4' }} value="it">🇮🇹 IT</option>
       <option style={{ background: '#131313', color: '#f0ece4' }} value="tr">🇹🇷 TR</option>
+      <option style={{ background: '#131313', color: '#f0ece4' }} value="pt">🇵🇹 PT</option>
     </select>
   );
 

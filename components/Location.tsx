@@ -66,7 +66,7 @@ export default function Location() {
                   <h4 style={{ fontSize: '0.9rem', color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.25rem' }}>{t('contact.phone.label')}</h4>
                   <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
                     <a href="tel:+212779403213" style={{ color: 'var(--text-primary)', textDecoration: 'none', fontWeight: 500 }}>
-                      +212 779-403213
+                      {t('contact.phone.val')}
                     </a>
                   </p>
                 </div>
