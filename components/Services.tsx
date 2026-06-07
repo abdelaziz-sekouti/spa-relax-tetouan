@@ -9,7 +9,7 @@ export default function Services() {
   const services = [
     {
       title: t('services.s1.title'),
-      durationVal: '60',
+      durationVal: '',
       price: '250 DH',
       desc: t('services.s1.desc'),
       image: '/images/massage-relax.jpg',
@@ -17,7 +17,7 @@ export default function Services() {
     },
     {
       title: t('services.s2.title'),
-      durationVal: '60',
+      durationVal: '',
       price: '350 DH',
       desc: t('services.s2.desc'),
       image: '/images/massage-homme.jpg',
@@ -25,7 +25,7 @@ export default function Services() {
     },
     {
       title: t('services.s3.title'),
-      durationVal: '75',
+      durationVal: '',
       price: '450 DH',
       desc: t('services.s3.desc'),
       image: '/images/massage-oriental-tetouan.jpeg',
@@ -33,7 +33,7 @@ export default function Services() {
     },
     {
       title: t('services.s4.title'),
-      durationVal: '90',
+      durationVal: '',
       price: '600 DH',
       desc: t('services.s4.desc'),
       image: '/images/massage-tetouan-kaboul.jpg',
@@ -120,7 +120,7 @@ export default function Services() {
                     flexDirection: isRtl ? 'row-reverse' : 'row'
                   }}>
                     <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 500, letterSpacing: '0.05em' }}>
-                      ⏱ {item.durationVal} {t('services.min')}
+                      {/* ⏱ {item.durationVal} {t('services.min')} */}
                     </span>
                     <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: 'var(--gold)', fontWeight: 700 }}>
                       {formattedPrice}
