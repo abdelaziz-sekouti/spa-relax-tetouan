@@ -20,12 +20,20 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: '80px' }}>
-      {/* Background Image with Dark Overlays */}
-      <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-        backgroundImage: 'url("/images/men-massage-tetouan.jpg")',
-        backgroundSize: 'cover', backgroundPosition: 'center 40%', zIndex: 1,
-      }} />
+      {/* Background Video with Dark Overlays */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
+          objectFit: 'cover', objectPosition: 'center 40%', zIndex: 1,
+        }}
+      >
+        <source src="/videos/Massage Tetouan.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
         background: 'linear-gradient(to bottom, rgba(13,13,13,0.7) 0%, rgba(13,13,13,0.92) 80%, #0d0d0d 100%)',
